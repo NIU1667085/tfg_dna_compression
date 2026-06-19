@@ -1,0 +1,19 @@
+# Ignore these
+.DS_Store
+scripts/*
+DS*/*
+xDSx*/*
+*Sampling*/*
+bkp_*/*
+logs/*
+errors/*
+tools/*
+sequences/*
+sequences_raw/*
+cassava_raw/*
+DS*.*
+
+# Except these
+!scripts/*.sh
+tools/JARVIS3
+sequences/CY.seq
