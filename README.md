@@ -1,6 +1,6 @@
 # TFG — DNA Compression Benchmark
 
-A comparative benchmarking framework for DNA sequence compression algorithms, developed as a Bachelor's thesis (TFG). The system evaluates 11 compression algorithms across 28 genomic datasets, measuring compression ratio, speed, memory usage, and information-theoretic limits.
+A comparative benchmarking framework for DNA sequence compression algorithms, developed as a Bachelor's thesis (TFG). The system evaluates 7 compression algorithms across 26 genomic datasets, measuring compression ratio, speed, memory usage, and information-theoretic limits.
 
 ---
 
@@ -8,7 +8,7 @@ A comparative benchmarking framework for DNA sequence compression algorithms, de
 
 ```
 tfg_dna_compression/
-├── comparative/               # Core benchmarking framework
+├── comparative/              # Core benchmarking framework
 │   ├── main.py               # Entry point
 │   ├── algorithms.py         # Algorithm discovery and command templates
 │   ├── benchmark.py          # Run compress/decompress, validate, measure
@@ -56,13 +56,13 @@ Seven algorithms are compared in the main benchmark:
 
 Downloaded from NCBI using `efetch`. Five categories:
 
-| Category | Genomes | Example |
+| Category | # Genomes | Example |
 |---|---|---|
-| Virus | 6 | SARS-CoV-2, HIV, PhiX174 |
-| Bacteria | 6 | *E. coli*, *M. tuberculosis*, *S. aureus* |
-| Mitochondria | 6 | Human mitochondrion + 5 *PV* sequences |
-| Eukaryota chromosomes | 4 | *A. thaliana*, *S. cerevisiae* |
-| *H. sapiens* chromosomes | 4 | chr21, chr22, chrX, chrY |
+| Virus | 6 | SARS-CoV-2 |
+| Bacteria | 6 | *E. coli*|
+| Mitochondria | 6 | Human mitochondrion |
+| Eukaryota chromosomes | 4 | *A. thaliana* |
+| *H. sapiens* chromosomes | 4 | chrX |
 
 ---
 
@@ -136,7 +136,7 @@ Notebooks in `proves/` let you work with the results CSV and dataset statistics 
 
 ## Metrics
 
-Each benchmark run records, some of them:
+Each benchmark run records, some of them are:
 
 | Metric | Description |
 |---|---|
