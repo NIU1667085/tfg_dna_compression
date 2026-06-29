@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OUTDIR="$HOME/genomic_benchmark/data/"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+OUTDIR="$SCRIPT_DIR/data2/"
 mkdir -p "$OUTDIR"
 
 download_fasta () {
@@ -93,8 +94,8 @@ download_fasta "PV560051.1" "PV560051.1" "mitochondria"
 # -------------------------
 # Homo sapiens
 # -------------------------
-download_fasta "homo_sapiens_chr1" "NC_000001.11" "chromosome"
-download_fasta "homo_sapiens_chr4" "NC_000004.12" "chromosome"
+# download_fasta "homo_sapiens_chr1" "NC_000001.11" "chromosome"
+# download_fasta "homo_sapiens_chr4" "NC_000004.12" "chromosome"
 download_fasta "homo_sapiens_chr21" "NC_000021.9" "chromosome"
 download_fasta "homo_sapiens_chr22" "NC_000022.11" "chromosome"
 download_fasta "homo_sapiens_chrX" "NC_000023.11" "chromosome"
